@@ -19,5 +19,7 @@ Como Usar
 Contribuição
    Contribuições são bem-vindas! Por favor, abra um pull request ou relate um problema.
    Licença
-   Este projeto está licenciado sob a licença MIT.
+   Este projeto use the GNU Lesser General
+Public License instead of this License.  But first, please read
+<https://www.gnu.org/licenses/why-not-lgpl.html>.
 
