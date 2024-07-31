@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alertas - Seguro do Balneário </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="chamados.html">Chamados</a></li>
+        <li><a class="active" href="alerta.html">Alertas</a></li>
+        <li><a href="panico.html">Pânico</a></li>
+        <li><a href="telefones.html">Telefones</a></li>
+    </ul>
+
+    <div class="top-container">
+        <h1>Alertas</h1>
+        
+        <form id="form-alerta">
+            <h2>Criar Novo Alerta</h2>
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" required>
+            
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao" required></textarea>
+            
+            <label for="nivel">Nível de Alerta:</label>
+            <select id="nivel" name="nivel">
+                <option value="alto">Alto</option>
+                <option value="medio">Médio</option>
+                <option value="baixo">Baixo</option>
+            </select>
+            
+            <button type="submit">Enviar</button>
+        </form>
+
+        <hr>
+
+        <h2>Lista de Alertas</h2>
+        <table id="tabela-alertas">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Descrição</th>
+                    <th>Data</th>
+                    <th>Nível</th>
+                </tr>
+            </thead>
+            <tbody>
+              <script>
+                document.getElementById('form-alerta').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    
+                    const titulo = document.getElementById('titulo').value;
+                    const descricao = document.getElementById('descricao').value;
+                    const nivel = document.getElementById('nivel').value;
+                    const data = new Date().toLocaleDateString();
+                
+                    const tabelaAlertas = document.getElementById('tabela-alertas').getElementsByTagName('tbody')[0];
+                    const novaLinha = tabelaAlertas.insertRow();
+                
+                    const cellId = novaLinha.insertCell(0);
+                    const cellTitulo = novaLinha.insertCell(1);
+                    const cellDescricao = novaLinha.insertCell(2);
+                    const cellData = novaLinha.insertCell(3);
+                    const cellNivel = novaLinha.insertCell(4);
+                
+                    cellId.innerHTML = tabelaAlertas.rows.length;
+                    cellTitulo.innerHTML = titulo;
+                    cellDescricao.innerHTML = descricao;
+                    cellData.innerHTML = data;
+                    cellNivel.innerHTML = nivel;
+                
+                    document.getElementById('form-alerta').reset();
+                });
+                </script>
+                
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bottom-container">
+        <p class="copyright">© 2024 Balneário Seguro.</p>
+    </div>
+</body>
+
+</html>

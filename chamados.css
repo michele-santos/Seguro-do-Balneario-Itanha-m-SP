@@ -1,0 +1,62 @@
+body {
+    font-family: 'Merriweather', sans-serif;
+    background-color: #f4f6ff;
+    color: #40514E;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111d5e;
+  }
+  
+  li {
+    float: left;
+    padding-left: 20px;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    line-height: 3;
+  }
+  
+  li a:hover {
+    background-color: grey;
+  }
+  
+  .top-container {
+    margin: 50px;
+  }
+  
+  form {
+    margin-bottom: 50px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .bottom-container {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  

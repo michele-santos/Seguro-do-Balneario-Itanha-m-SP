@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chamados - Seguro do Balneario/title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a class="active" href="chamados.html">Chamados</a></li>
+        <li><a href="alertas.html">Alertas</a></li>
+        <li><a href="panico.html">Pânico</a></li>
+        <li><a href="telefones.html">Telefones</a></li>
+    </ul>
+
+    <div class="top-container">
+        <h1>Chamados</h1>
+        
+        <form id="form-chamado">
+            <h2>Criar Novo Chamado</h2>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+            
+            <label for="descricao">Descrição do Problema:</label>
+            <textarea id="descricao" name="descricao" required></textarea>
+            
+            <label for="prioridade">Prioridade:</label>
+            <select id="prioridade" name="prioridade">
+                <option value="alta">Alta</option>
+                <option value="media">Média</option>
+                <option value="baixa">Baixa</option>
+            </select>
+            
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" name="categoria">
+                <option value="tecnico">Técnico</option>
+                <option value="administrativo">Administrativo</option>
+            </select>
+            
+            <label for="anexo">Anexar Arquivo:</label>
+            <input type="file" id="anexo" name="anexo">
+            
+            <button type="submit">Enviar</button>
+        </form>
+
+        <hr>
+
+        <h2>Lista de Chamados</h2>
+        <table id="tabela-chamados">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Descrição</th>
+                    <th>Data</th>
+                    <th>Status</th>
+                    <th>Prioridade</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Problema no Sistema de Alarme</td>
+                <td>O sistema de alarme não está funcionando corretamente durante a noite.</td>
+                <td>2024-07-23</td>
+                <td>Em andamento</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Vazamento no Banheiro</td>
+                <td>Há um vazamento contínuo no banheiro da área administrativa.</td>
+                <td>2024-07-22</td>
+                <td>Resolvido</td>
+                <td>Média</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Problema com a Iluminação</td>
+                <td>A iluminação no corredor principal está piscando constantemente.</td>
+                <td>2024-07-21</td>
+                <td>Em andamento</td>
+                <td>Baixa</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bottom-container">
+        <p class="copyright">© 2024 Balneário Seguro.</p>
+    </div>
+</body>
+
+</html>
+

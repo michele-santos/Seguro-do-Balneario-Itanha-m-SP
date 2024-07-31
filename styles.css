@@ -1,0 +1,159 @@
+
+
+.topage {
+  background-color: #0c4e05;
+  color: white;
+  font-size: 15pt;
+  font-style: normal;
+  line-height: 2.8;
+  overflow: hidden;
+}
+
+body {
+  color: #40514E;
+  font-size: 14pt;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', sans-serif;
+  background-color: #f4f6ff;
+}
+
+h1 {
+  color: #0c4e05;
+  font-size: 3.0rem;
+  font-family: 'Montserrat', cursive;
+  line-height: 1;
+  margin: 50px auto 0 auto;
+}
+
+h2 {
+  color: #0c4e05;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+p {
+  line-height: 1;
+}
+
+hr {
+  border: dotted #a0c1b8 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 50px auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0c4e05;
+}
+
+li {
+  float: left;
+  font-style: initial;
+  padding-left: 130px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding-left: 100px; /* Pode ser ajustado para melhorar a aparência */
+  text-decoration: none;
+  line-height: 3;
+}
+
+li a:hover {
+  background-color: grey;
+}
+
+.copyright {
+  color: white;
+  line-height: 3;
+  margin-bottom: 0;
+}
+
+.form {
+  align-items: baseline;
+}
+
+.topnav {
+  line-height: 3;
+}
+
+.top-container {
+  position: relative;
+  padding-top: 5px;
+  margin: 50px 0;
+}
+
+.middle-container {
+  margin: 100px 0;
+}
+
+.bottom-container {
+  background-color: #0c4e05;
+  padding: 5px;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.homepage {
+  color: #40514E;
+  font-size: 14pt;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', sans-serif;
+  background-color: #f4f6ff;
+}
+
+.social-media {
+  padding-left: 30px;
+  display: block;
+  text-align: center;
+}
+
+.sale {
+  width: 50%;
+  margin: 100px auto 100px 200px;
+  text-align: right;
+}
+
+.phone-img {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+  text-align: right;
+}
+
+.price {
+  text-align: left;
+  margin-left: 100px;
+  list-style: circle;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #fa7d09;
+}
+
+.button2 {
+  background-color: #fa7d09;
+}

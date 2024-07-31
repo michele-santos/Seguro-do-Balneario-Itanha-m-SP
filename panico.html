@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pânico -  Seguro do Balneário</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="chamados.html">Chamados</a></li>
+        <li><a href="alerta.html">Alertas</a></li>
+        <li><a class="active" href="panico.html">Pânico</a></li>
+        <li><a href="telefones.html">Telefones</a></li>
+    </ul>
+
+    <div class="top-container">
+        <h1>Botão de Pânico</h1>
+        
+        <div class="panic-container">
+            <h2>Em caso de emergência, clique no botão abaixo:</h2>
+            <button class="panic-button" onclick="enviarAlerta()">Enviar Alerta de Pânico</button>
+        </div>
+
+        <hr>
+
+        <h2>O que fazer em caso de emergência</h2>
+        <ul>
+            <li>Mantenha a calma e tente não entrar em pânico.</li>
+            <li>Se possível, afaste-se da área de perigo.</li>
+            <li>Contate as autoridades locais imediatamente.</li>
+            <li>Forneça informações precisas sobre sua localização e a natureza da emergência.</li>
+        </ul>
+    </div>
+
+    <div class="bottom-container">
+        <p class="copyright">© 2024 Balneário Seguro.</p>
+    </div>
+    <script>
+        async function enviarAlerta() {
+            try {
+                const response = await fetch('http://localhost:3000/api/alert', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        message: 'Alerta de pânico!',
+                        location: 'Localização do usuário' // você pode usar a API de geolocalização do navegador para obter a localização real
+                    })
+                });
+
+                if (response.ok) {
+                    alert('Alerta de pânico enviado com sucesso!');
+                } else {
+                    alert('Falha ao enviar o alerta de pânico.');
+                }
+            } catch (error) {
+                alert('Erro ao enviar o alerta de pânico.');
+            }
+        }
+    </script>
+  </body>
+</html>
+

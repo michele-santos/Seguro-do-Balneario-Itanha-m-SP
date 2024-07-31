@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguro do Balneário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-container">
+            <img src="assets/images/logo.png" alt="Logo Seguro do Balneário">
+        </div>
+        <h1>Seguro do Balneário</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a class="active" href="index.html">Início</a></li>
+                <li><a href="chamados.html">Chamados</a></li>
+                <li><a href="alertas.html">Alertas</a></li>
+                <li><a href="panico.html">Pânico</a></li>
+                <li><a href="telefones.html">Telefones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <h2>Conheça todas as funcionalidades do Seguro do Balneário em um só lugar</h2>
+        <section class="main-content" id="main-content"></section>
+
+        <section id="contact">
+            <h2>Contato</h2>
+            <form action="send-email.php" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <div class="modal" id="modal" onclick="hideModal()">
+        <div class="modal-content" id="modal-content"></div>
+    </div>
+
+    <footer class="bottom-container">
+        <p class="copyright">© 2024 Balneário Seguro.</p>
+    </footer>
+
+    <script>
+        function hideModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+
