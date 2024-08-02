@@ -1,4 +1,4 @@
-Segurança do Balneário
+Segurança do Balneário Projeto futuro.
    Um aplicativo para garantir a segurança nas praias e balneários, fornecendo informações e alertas em tempo real sobre condições de segurança e salvamento.
 Funcionalidades
    - Monitoramento em tempo real das condições da praia
