@@ -3,6 +3,7 @@ Segurança do Balneário Projeto futuro.
 Funcionalidades
    - Monitoramento em tempo real das condições da praia
    - Alertas de segurança e salvamento
+   - Informação de insidentes nas residências de veraneios.
    - Informações sobre a qualidade da água
    - Mapa das instalações de salvamento e primeiros socorros
 Instalação
